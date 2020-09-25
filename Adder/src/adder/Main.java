@@ -3,14 +3,20 @@ package adder;
 public class Main {
 
    public static void main(String[] args) {
+        
         try {
             int result = addArguments(args);
             System.out.println(result);
-	} catch (IllegalArgumentException e) {
+	} 
+	
+	catch (IllegalArgumentException e) {
 	    System.err.println("Please enter integers.");
-        } catch (Exception e) {
+        } 
+        
+        catch (Exception e) {
             System.err.println("Please enter an argument(s).");
         }
+        
     }
 
    private static int addArguments(String[] args) {
